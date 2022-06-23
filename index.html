@@ -12,6 +12,12 @@
             padding: 0;
         }
 
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .container-inner>p {
             font-size: 20px;
         }
@@ -26,6 +32,9 @@
         }
 
         .container-inner {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
             padding: 0 15px;
         }
 
@@ -48,7 +57,7 @@
             text-align: center;
             font-size: 13px;
 
-            padding-top: 15px;
+            padding: 15px 0;
         }
     </style>
 
@@ -56,80 +65,83 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="block">
-            <img class="profile-photo" src="./Screenshot 2022-06-23 at 20.59.15.png" alt="profile photo">
+    <div class="main">
+        <div class="container">
+            <div class="block">
+                <img class="profile-photo" src="./Screenshot 2022-06-23 at 20.59.15.png" alt="profile photo">
+            </div>
+
+            <div class="block info">
+                <h1 style="padding-bottom: 10px;">Кайсар Аскарулы</h1>
+                <h2 style="padding-bottom: 20px;">Веб-разработчик</h2>
+                <p>Дата рождения: 20 Марта. 2005г.</p>
+                <p>Школьник 11го класса</p>
+            </div>
         </div>
 
-        <div class="block info">
-            <h1 style="padding-bottom: 10px;">Кайсар Аскарулы</h1>
-            <h2 style="padding-bottom: 20px;">Веб-разработчик</h2>
-            <p>Дата рождения: 20 Марта. 2005г.</p>
-            <p>Школьник 11го класса</p>
+        <hr style="margin: 15px;">
+
+        <div class="container-inner">
+            <h2>Образование:</h2>
+            <br>
+            <p style="font-size: 23px; text-decoration: underline;">Школа №39 имени С.А.Ходжикова Специализированный
+                Лицей
+            </p>
+
+            <div style="padding: 30px">
+                <ul>
+                    <li>Открыл клуб читателей Гарри Потера.</li>
+                    <li>Участвовал в дебатах на тему Экономики и пути развития Республики Казахстан.</li>
+                    <li>Волонтерство на городском футбольном чемпионате.</li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-    <hr style="margin: 15px;">
+        <hr style="margin: 0 15px 15px 15px;">
 
-    <div class="container-inner">
-        <h2>Образование:</h2>
-        <br>
-        <p style="font-size: 23px; text-decoration: underline;">Школа №39 имени С.А.Ходжикова Специализированный Лицей
-        </p>
-
-        <div style="padding: 30px">
-            <ul>
-                <li>Открыл клуб читателей Гарри Потера.</li>
-                <li>Участвовал в дебатах на тему Экономики и пути развития Республики Казахстан.</li>
-                <li>Волонтерство на городском футбольном чемпионате.</li>
-            </ul>
+        <div class="container-inner">
+            <h2>Спорт:</h2>
+            <br>
+            <table border="1px solid">
+                <tr>
+                    <th>Клуб</th>
+                    <th>Позиция</th>
+                    <th>Период</th>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;">Lakers</td>
+                    <td style="padding: 5px;">Аттакующий</td>
+                    <td style="padding: 5px;">2016-2017</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;">Toronto Rapters</td>
+                    <td style="padding: 5px;">Полузащита</td>
+                    <td style="padding: 5px;">2017-2019</td>
+                </tr>
+                <tr>
+                    <td style="padding: 5px;">Yankees</td>
+                    <td style="padding: 5px;">Защитник</td>
+                    <td style="padding: 5px;">2019-наст.</td>
+                </tr>
+            </table>
         </div>
-    </div>
 
-    <hr style="margin: 0 15px 15px 15px;">
+        <hr style="margin: 15px;">
 
-    <div class="container-inner">
-        <h2>Спорт:</h2>
-        <br>
-        <table border="1px solid">
-            <tr>
-                <th>Клуб</th>
-                <th>Позиция</th>
-                <th>Период</th>
-            </tr>
-            <tr>
-                <td style="padding: 5px;">Lakers</td>
-                <td style="padding: 5px;">Аттакующий</td>
-                <td style="padding: 5px;">2016-2017</td>
-            </tr>
-            <tr>
-                <td style="padding: 5px;">Toronto Rapters</td>
-                <td style="padding: 5px;">Полузащита</td>
-                <td style="padding: 5px;">2017-2019</td>
-            </tr>
-            <tr>
-                <td style="padding: 5px;">Yankees</td>
-                <td style="padding: 5px;">Защитник</td>
-                <td style="padding: 5px;">2019-наст.</td>
-            </tr>
-        </table>
-    </div>
+        <div class="container-inner">
+            <h2>Навыки:</h2>
 
-    <hr style="margin: 15px;">
-
-    <div class="container-inner">
-        <h2>Навыки:</h2>
-
-        <div style="padding: 30px">
-            <ol>
-                <li>HTML / CSS / Javascript</li>
-                <li>ООП</li>
-                <li>Алгоритмы и Структуры данных</li>
-            </ol>
+            <div style="padding: 30px">
+                <ol>
+                    <li>HTML / CSS / Javascript</li>
+                    <li>ООП</li>
+                    <li>Алгоритмы и Структуры данных</li>
+                </ol>
+            </div>
         </div>
-    </div>
 
-    <hr>
+        <hr>
+    </div>
 
     <div class="footer">
         <p>Сайт был сделан на HTML и немного CSS.</p>
